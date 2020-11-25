@@ -9,7 +9,8 @@
         "../sass/base/_typography.scss",
         "../sass/base/_resets.scss",
         "../sass/layout/_main.scss",
-        "../sass/layout/_header.scss"
+        "../sass/layout/_header.scss",
+        "../sass/layout/_overall.scss"
     ],
     "names": [],
     "file": "main.css"
