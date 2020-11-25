@@ -40,4 +40,76 @@ body {
   margin: 0 auto;
   padding: 36px 32px;
 }
+
+.header {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 36px;
+}
+
+.header__info {
+  display: flex;
+  flex-flow: column;
+  border-bottom: 1px solid var(--c-font-secondary);
+  margin-bottom: 16px;
+  padding-bottom: 24px;
+}
+
+.header__heading {
+  font-size: 1.714rem;
+  color: var(--c-font-primary);
+  margin-bottom: 4px;
+}
+
+.header__subheading {
+  color: var(--c-font-secondary);
+  font-weight: 700;
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__switch {
+  position: relative;
+  width: 48px;
+  height: 24px;
+}
+
+.header__checkbox {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.header__checkbox:checked + .header__slider:before {
+  transform: translate(22px, -50%);
+}
+
+.header__slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  background: var(--c-toggle);
+  border-radius: 34px;
+  pointer-events: none;
+}
+
+.header__slider::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background: var(--c-bg-top);
+  border-radius: 50%;
+  transition: all 250ms ease-in;
+}
 /*# sourceMappingURL=main.css.map */
