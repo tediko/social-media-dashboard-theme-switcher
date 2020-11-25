@@ -74,31 +74,13 @@ body {
   position: relative;
   width: 48px;
   height: 24px;
+  border-radius: 34px;
+  background: var(--c-toggle);
+  border: none;
   cursor: pointer;
 }
 
-.header__checkbox {
-  opacity: 0;
-  height: 0;
-  width: 0;
-}
-
-.header__checkbox:checked + .header__slider:before {
-  transform: translate(22px, -50%);
-}
-
-.header__slider {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: var(--c-toggle);
-  border-radius: 34px;
-  pointer-events: none;
-}
-
-.header__slider::before {
+.header__switch::before {
   position: absolute;
   content: '';
   top: 50%;

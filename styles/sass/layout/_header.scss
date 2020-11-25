@@ -30,29 +30,11 @@
         position: relative;
         width: 48px;
         height: 24px;
-        cursor: pointer;
-    }
-
-    &__checkbox {
-        opacity: 0;
-        height: 0;
-        width: 0;
-
-        &:checked + .header__slider:before {
-            transform: translate(22px, -50%);
-          }
-    }
-
-    &__slider {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: $c-toggle;
         border-radius: 34px;
-        pointer-events: none;
-        
+        background: $c-toggle;
+        border: none;
+        cursor: pointer;
+
         &::before {
             position: absolute;
             content: '';
