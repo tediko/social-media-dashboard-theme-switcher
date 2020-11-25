@@ -125,4 +125,99 @@ body {
     margin-left: 16px;
   }
 }
+
+.overall {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+.overall__card {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--c-bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 32px 0 26px 0;
+  font-size: 0.85rem;
+  color: var(--c-font-secondary);
+}
+
+.overall__card::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.overall__card--fb::before {
+  background: #198ff5;
+}
+
+.overall__card--tt::before {
+  background: #1ca0f2;
+}
+
+.overall__card--inst::before {
+  background: linear-gradient(to right, #fdc468 0%, #df4996 100%);
+}
+
+.overall__card--yt::before {
+  background: #c4032a;
+}
+
+.overall__card-social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.overall__card-social img {
+  width: 22px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.overall__heading {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.overall__follower-count {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--c-font-primary);
+}
+
+.overall__text {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.overall__grow {
+  position: relative;
+  font-weight: 700;
+  color: #1db489;
+}
+
+.overall__grow::before {
+  position: relative;
+  content: url(../../assets/img/icon-up.svg);
+  top: -2px;
+  right: 5px;
+}
+
+.overall__grow--down {
+  color: #dc414c;
+}
+
+.overall__grow--down::before {
+  content: url(../../assets/img/icon-down.svg);
+}
 /*# sourceMappingURL=main.css.map */

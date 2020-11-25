@@ -1,0 +1,94 @@
+.overall {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background: $c-bg-card;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 32px 0 26px 0;
+        font-size: 0.85rem;
+        color: $c-font-secondary;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+        }
+
+        &--fb::before {
+            background: $c-facebook;
+        }
+        
+        &--tt::before {
+            background: $c-twitter;
+        }
+        
+        &--inst::before {
+            background: $c-instagram;
+        }
+        
+        &--yt::before {
+            background: $c-youtube;
+        }
+    }
+
+    &__card-social {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        img {
+            width: 22px;
+            height: auto;
+            margin-right: 8px;
+        }
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 0.85rem;
+    }
+    
+    &__follower-count {
+        font-size: 4rem;
+        font-weight: 700;
+        color: $c-font-primary;
+    }
+
+    &__text {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__grow {
+        position: relative;
+        font-weight: 700;
+        color: $c-green-line;
+
+        &::before {
+            position: relative;
+            content: url(../../assets/img/icon-up.svg);
+            top: -2px;
+            right: 5px;
+        }
+        
+        &--down {
+            color: $c-red-bright;
+            
+            &::before {
+                content: url(../../assets/img/icon-down.svg);
+            }
+        }
+    }
+}
