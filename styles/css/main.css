@@ -34,4 +34,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.main {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 36px 25px;
+}
 /*# sourceMappingURL=main.css.map */
