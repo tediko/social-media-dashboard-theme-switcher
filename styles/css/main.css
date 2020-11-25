@@ -112,4 +112,23 @@ body {
   border-radius: 50%;
   transition: all 250ms ease-in;
 }
+
+/* Header media queries */
+@media (min-width: 600px) {
+  .header {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .header__info {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header__heading {
+    font-size: 2rem;
+  }
+  .header__switch {
+    margin-left: 16px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

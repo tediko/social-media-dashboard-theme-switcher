@@ -69,3 +69,25 @@
         }
     }
 }
+
+/* Header media queries */
+@media (min-width: 600px) {
+    .header {
+        flex-flow: row;
+        justify-content: space-between;
+
+        &__info {
+            border-bottom: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__heading {
+            font-size: 2rem;
+        }
+
+        &__switch {
+            margin-left: 16px;
+        }
+    }
+}
