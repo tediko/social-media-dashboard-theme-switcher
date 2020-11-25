@@ -48,11 +48,9 @@ body {
 }
 
 .header__info {
-  display: flex;
-  flex-flow: column;
-  border-bottom: 1px solid var(--c-font-secondary);
   margin-bottom: 16px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--c-font-secondary);
 }
 
 .header__heading {
