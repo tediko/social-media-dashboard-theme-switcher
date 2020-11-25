@@ -130,6 +130,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px;
+  margin-bottom: 50px;
 }
 
 .overall__card {
@@ -138,12 +139,12 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background: var(--c-bg-card);
-  border-radius: 10px;
-  overflow: hidden;
   padding: 32px 0 26px 0;
   font-size: 0.85rem;
   color: var(--c-font-secondary);
+  background: var(--c-bg-card);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .overall__card::before {
@@ -219,5 +220,18 @@ body {
 
 .overall__grow--down::before {
   content: url(../../assets/img/icon-down.svg);
+}
+
+/* Overall media queries */
+@media (min-width: 600px) {
+  .overall {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .overall {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 /*# sourceMappingURL=main.css.map */
