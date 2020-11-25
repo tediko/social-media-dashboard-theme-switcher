@@ -24,6 +24,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &:hover {
+            .header__subheading {
+                color: $c-font-primary;
+                transition: color 250ms ease-in-out;
+            }
+
+            .header__switch {
+                filter: brightness(110%);
+                transition: filter 250ms ease-in;
+            }
+        }
     }
 
     &__switch {
@@ -45,7 +57,11 @@
             height: 18px;
             background: $c-bg-top;
             border-radius: 50%;
-            transition: all 250ms ease-in;
+            transition: transform 300ms ease-in;
+        }
+
+        &.active::before {
+            transform: translate(22px, -50%);
         }
     }
 }

@@ -70,6 +70,16 @@ body {
   align-items: center;
 }
 
+.header__toggle:hover .header__subheading {
+  color: var(--c-font-primary);
+  transition: color 250ms ease-in-out;
+}
+
+.header__toggle:hover .header__switch {
+  filter: brightness(110%);
+  transition: filter 250ms ease-in;
+}
+
 .header__switch {
   position: relative;
   width: 48px;
@@ -90,7 +100,11 @@ body {
   height: 18px;
   background: var(--c-bg-top);
   border-radius: 50%;
-  transition: all 250ms ease-in;
+  transition: transform 300ms ease-in;
+}
+
+.header__switch.active::before {
+  transform: translate(22px, -50%);
 }
 
 /* Header media queries */
