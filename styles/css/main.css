@@ -41,6 +41,7 @@ body {
   max-width: 1110px;
   margin: 0 auto;
   padding: 36px 32px;
+  box-sizing: initial;
 }
 
 .header {
