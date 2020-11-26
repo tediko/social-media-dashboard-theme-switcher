@@ -285,7 +285,8 @@ body {
   font-size: 0.85rem;
   color: #1db489;
   font-weight: 700;
-  align-self: center;
+  align-self: end;
+  margin-bottom: 5px;
 }
 
 .overview__stats-grow::before {
