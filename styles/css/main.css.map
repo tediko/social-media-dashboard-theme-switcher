@@ -10,7 +10,8 @@
         "../sass/base/_resets.scss",
         "../sass/layout/_main.scss",
         "../sass/layout/_header.scss",
-        "../sass/layout/_overall.scss"
+        "../sass/layout/_overall.scss",
+        "../sass/layout/_overview.scss"
     ],
     "names": [],
     "file": "main.css"
