@@ -16,6 +16,7 @@
         background: $c-bg-card;
         border-radius: 10px;
         overflow: hidden;
+        cursor: pointer;
         transition: background 250ms ease-in;
 
         &:hover {
