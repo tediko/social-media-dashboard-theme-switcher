@@ -264,6 +264,12 @@ body {
   padding: 25px 30px 20px 25px;
   background: var(--c-bg-card);
   border-radius: 10px;
+  cursor: pointer;
+  transition: background 250ms ease-in;
+}
+
+.overview__stats:hover {
+  background: var(--c-bg-card-hover);
 }
 
 .overview__stats-type {

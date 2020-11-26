@@ -21,6 +21,12 @@
         padding: 25px 30px 20px 25px;
         background: $c-bg-card;
         border-radius: 10px;
+        cursor: pointer;
+        transition: background 250ms ease-in;
+
+        &:hover {
+            background: $c-bg-card-hover;
+        }
     }
 
     &__stats-type {
