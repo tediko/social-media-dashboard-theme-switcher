@@ -1,0 +1,26 @@
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(131, 131, 131);
+    font-size: 0.8rem;
+    opacity: 0.5;
+
+    &__attribution {
+        text-align: center;
+    }
+
+    a {
+        color: $c-font-primary;
+        text-decoration: none;
+        transition: color 250ms ease-in;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $c-red-bright;
+    }
+}
