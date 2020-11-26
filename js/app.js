@@ -1,16 +1,24 @@
 const body = document.querySelector('[data-theme]');
 const switchBtn = document.querySelector('[data-switch]');
 const cards = document.querySelectorAll('[data-anim]');
+const cardsReverse = [...cards].reverse();
 const lightTheme = 'light';
 const darkTheme = 'dark';
 let bodyTheme = body.dataset;
 
 //Cards transition effect
 const cardsAnimation = () => {
-    cards.forEach((card, index) => {
-        const delay = 80;
-        card.style.transition = `background 250ms ease-in ${index * delay}ms`;
-    })
+    if (bodyTheme.theme == lightTheme) {
+        cards.forEach((card, index) => {
+            const delay = 50;
+            card.style.transition = `background 250ms ease-in ${index * delay}ms`;
+        })
+    } else {
+        cardsReverse.forEach((card, index) => {
+            const delay = 50;
+            card.style.transition = `background 250ms ease-in ${index * delay}ms`;
+        })
+    }
 
     //Remove transition from cards after all transition ends.
     cards.forEach(card => {
