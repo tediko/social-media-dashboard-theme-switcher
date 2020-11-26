@@ -11,4 +11,15 @@ body {
     background: $c-bg;
     font-family: 'Inter', sans-serif;
     transition: background 700ms ease-in;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background: $c-bg-top;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 233px;
+        border-radius: 0 0 10px 10px;
+    }
 }
