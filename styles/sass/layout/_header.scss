@@ -13,6 +13,7 @@
         font-size: 1.714rem;
         color: $c-font-primary;
         margin-bottom: 4px;
+        transition: color 500ms ease-in;
     }
 
     &__subheading {
