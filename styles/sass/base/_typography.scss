@@ -10,4 +10,5 @@ body {
     min-height: 100vh;
     background: $c-bg;
     font-family: 'Inter', sans-serif;
+    transition: background 700ms ease-in;
 }
