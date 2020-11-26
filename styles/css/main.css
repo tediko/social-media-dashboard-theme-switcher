@@ -250,7 +250,7 @@ body {
 
 .overview__wrapper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 30px;
 }
 
@@ -300,5 +300,12 @@ body {
 
 .overview__stats-grow--down::before {
   content: url(../../assets/img/icon-down.svg);
+}
+
+/* Overview media queries */
+@media (min-width: 813px) and (max-width: 1073px) {
+  .overview__stats:last-child {
+    grid-column: 3;
+  }
 }
 /*# sourceMappingURL=main.css.map */
