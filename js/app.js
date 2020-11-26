@@ -8,14 +8,13 @@ let bodyTheme = body.dataset;
 
 //Cards transition effect
 const cardsAnimation = () => {
+    const delay = 50;
     if (bodyTheme.theme == lightTheme) {
         cards.forEach((card, index) => {
-            const delay = 50;
             card.style.transition = `background 250ms ease-in ${index * delay}ms`;
         })
     } else {
         cardsReverse.forEach((card, index) => {
-            const delay = 50;
             card.style.transition = `background 250ms ease-in ${index * delay}ms`;
         })
     }
