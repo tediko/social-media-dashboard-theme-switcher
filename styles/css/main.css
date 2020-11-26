@@ -62,6 +62,7 @@ body {
   font-size: 1.714rem;
   color: var(--c-font-primary);
   margin-bottom: 4px;
+  transition: color 500ms ease-in;
 }
 
 .header__subheading {
@@ -250,6 +251,7 @@ body {
   font-size: 1.714rem;
   color: var(--c-font-primary);
   margin-bottom: 24px;
+  transition: color 500ms ease-in;
 }
 
 .overview__wrapper {
