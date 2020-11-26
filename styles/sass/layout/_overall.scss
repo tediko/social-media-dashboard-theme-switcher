@@ -16,6 +16,11 @@
         background: $c-bg-card;
         border-radius: 10px;
         overflow: hidden;
+        transition: background 250ms ease-in;
+
+        &:hover {
+            background: $c-bg-card-hover;
+        }
 
         &::before {
             position: absolute;

@@ -147,6 +147,11 @@ body {
   background: var(--c-bg-card);
   border-radius: 10px;
   overflow: hidden;
+  transition: background 250ms ease-in;
+}
+
+.overall__card:hover {
+  background: var(--c-bg-card-hover);
 }
 
 .overall__card::before {
