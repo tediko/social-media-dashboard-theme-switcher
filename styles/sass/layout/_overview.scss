@@ -1,0 +1,62 @@
+.overview {
+
+    &__heading {
+        font-size: 1.714rem;
+        color: $c-font-primary;
+        margin-bottom: 24px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    &__stats {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 22px;
+        justify-content: space-between;
+        padding: 25px 30px 20px 25px;
+        background: $c-bg-card;
+        border-radius: 10px;
+    }
+
+    &__stats-type {
+        font-size: 1rem;
+        color: $c-font-secondary;
+    }
+
+    &__stats-socials {
+        justify-self: end;
+    }
+
+    &__stats-counter {
+        font-size: 2.30rem;
+        font-weight: 700;
+        color: $c-font-primary;
+    }
+
+    &__stats-grow {
+        font-size: 0.85rem;
+        color: $c-green-line;
+        font-weight: 700;
+        align-self: center;
+
+        &::before {
+            position: relative;
+            content: url(../../assets/img/icon-up.svg);
+            top: -2px;
+            right: 2px;
+        }
+        
+        &--down {
+            color: $c-red-bright;
+
+            &::before {
+                content: url(../../assets/img/icon-down.svg);
+            }
+        }
+    }
+}
